@@ -28,3 +28,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# 插件自动定义的typescript全局文件
+types/auto-import.d.ts
+types/auto-components.d.ts
+types/auto-router.d.ts

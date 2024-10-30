@@ -1,7 +1,11 @@
 import { createApp } from 'vue'
-import "./assets/css/style.scss"
+import "./styles/index.scss"
 import App from './App.vue'
 
-const app = createApp(App)
+import { router } from './router'
+import {setupGlobCom} from "./components";
 
+const app = createApp(App)
+app.use(router)
+app.use(setupGlobCom)
 app.mount('#app')

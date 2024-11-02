@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { Icon } from "@/components/Icon"
+import Children from "sub/index/children.vue";
 </script>
 
 <template>
-  <div>
-    <el-button>主页</el-button>
-    <Icon icon="flowbite:bug-outline"></Icon>
+  <div class="index-page">
+    <Icon icon="solar:4k-bold"></Icon>
+    <children />
   </div>
 </template>
 

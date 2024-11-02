@@ -46,16 +46,13 @@ const getIconName = computed(() => {
 <style lang="scss" scoped>
 $prefix-cls: v-bind('prefixCls[0]');
 
-.#{prefix-cls}, .iconify {
+.iconify {
   :deep(svg) {
     &:hover {
       // stylelint-disable-next-line
       color: v-bind(hoverColor) !important;
     }
   }
-}
-
-.iconify {
   &:hover {
     // stylelint-disable-next-line
     color: v-bind(hoverColor) !important;

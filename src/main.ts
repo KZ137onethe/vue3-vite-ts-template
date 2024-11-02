@@ -3,7 +3,7 @@ import "./styles/index.scss"
 import App from './App.vue'
 
 import { router } from './router'
-import {setupGlobCom} from "./components";
+import {setupGlobCom} from "./common";
 
 const app = createApp(App)
 app.use(router)

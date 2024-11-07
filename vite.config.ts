@@ -15,6 +15,14 @@ export default defineConfig({
     vue(),
     vueJsx(),
     VueRouter({
+      routesFolder: [
+        {
+          src: "src/pages",
+          path: "",
+          exclude: "**/components/**",
+          extensions: [".vue"]
+        }
+      ],
       dts: 'types/auto-router.d.ts'
     }),
     AutoImport({
@@ -30,8 +38,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "~": path.resolve(__dirname, "./"),
-      "@": path.resolve(__dirname, "./src"),
-      "sub": path.resolve(__dirname, "./src/subcomponents"),
+      "@": path.resolve(__dirname, "./src")
     },
     extensions: ['.ts', '.js', '.mjs', '.jsx', '.tsx', '.json', '.vue']
   },

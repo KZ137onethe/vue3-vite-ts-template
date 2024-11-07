@@ -4,11 +4,18 @@ import Children from "sub/index/children.vue";
 
 <template>
   <div class="index-page">
-    <Icon icon="solar:4k-bold"></Icon>
-    <children />
+    <Icon icon="material-symbols:send"></Icon>
+    <children v-slot="{ render }">
+      {{ render.hitokoto }} - {{ render.from_who ?? '佚名' }}
+    </children>
   </div>
 </template>
 
 <style scoped lang="scss">
-
+.index-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 </style>

@@ -9,17 +9,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "echarts": "^5.5.1",
+    "axios": "^1.7.7",
+    "dayjs": "^1.11.13",
     "element-plus": "^2.8.6",
+    "lodash-es": "^4.17.21",
     "pinia": "^2.2.5",
     "sass": "^1.80.4",
     "vue": "^3.5.12",
-    "vue-echarts": "^7.0.3",
-    "vue-router": "^4.4.5",
-    "vue3-baidu-map-gl": "^2.6.1"
+    "vue-router": "^4.4.5"
   },
   "devDependencies": {
     "@iconify/vue": "^4.1.2",
+    "@types/lodash-es": "^4.17.12",
     "@types/node": "^22.8.4",
     "@vitejs/plugin-vue": "^5.1.4",
     "@vitejs/plugin-vue-jsx": "^4.0.1",

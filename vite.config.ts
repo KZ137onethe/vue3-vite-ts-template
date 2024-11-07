@@ -8,6 +8,7 @@ import Components from 'unplugin-vue-components/vite'
 import VueRouter from 'unplugin-vue-router/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import WebfontDownload from 'vite-plugin-webfont-dl'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -33,7 +34,10 @@ export default defineConfig({
     Components({
       resolvers:[ElementPlusResolver()],
       dts: 'types/auto-components.d.ts'
-    })
+    }),
+    WebfontDownload([
+      "https://fonts.bunny.net/css?family=noto-sans-sc:100,200,300,400,500,600,700,800,900|zcool-kuaile:400"
+    ])
   ],
   resolve: {
     alias: {
